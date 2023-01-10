@@ -3,7 +3,7 @@ from typing import Optional
 import hashlib
 class Transaction:
     """Represents a transaction that moves a single coin
-    A transaction with no source creates money. It will only be created by the bank."""
+    A transaction with no source creates money. It will only be created by the node that mined the block."""
 
     def __init__(self, output: PublicKey, input: Optional[TxID], signature: Signature) -> None:
         # do not change the name of this field:
